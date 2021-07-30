@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Superhero Api</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="hero-header">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/favicon.ico" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                Superhero
+              </a>
+            </div>
+          </nav>
+    </header>
+    <main id="hero-main" class="container">
+      <div class="row mb-3">
+        <section id="hero-finder">
+          <div class="card w-100">
+            <div class="row g-0">
+              <div class="col-12 col-md-7 col-lg-6">
+                <div class="card-body">
+                  <h1 class="card-title text-center mt-5">Find your SuperHero!</h1>
+                  <p class="card-text text-center mt-4">Write your Superhero's number to search it</p>
+                  <form id="heroForm" class="row g-3 m-4">
+                    <input id="heroNumber_input" class="form-control form-control-sm mb-3" type="number" placeholder="..numbers from 1 to 731" aria-label="search input">
+                    <button type="submit" class="btn btn-danger mb-3">Search by number</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-12 col-md-5 col-lg-6">
+                <img src="img/sh1.jpg" class="card-img rounded-end" alt="...">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="hero__info" class="row">
+        <section id="hero-ficha" class="col-12 col-lg-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="..." id="hero__img" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h2 id="hero__name" class="card-title text-center"></h2>
+                      <p class="card-text"><h5>Biography</h5>
+                        <small><ul class="list-group list-group-flush">
+                          <li class="list-group-item" id="hero__full-name"></li>
+                          <li class="list-group-item" id="hero__alter-egos"></li>
+                          <li class="list-group-item" id="hero__aliases"></li>
+                          <li class="list-group-item" id="hero__place-of-birth"></li>
+                          <li class="list-group-item" id="hero__first-appearance"></li>
+                          <li class="list-group-item" id="hero__publisher"></li>
+                          <li class="list-group-item" id="hero__alignment"></li>
+                      </ul></small></p>
+                      <p class="card-text"><h5>Appearance</h5>
+                        <small><ul class="list-group list-group-flush">
+                          <li class="list-group-item" id="hero__gender"></li>
+                          <li class="list-group-item" id="hero__race"></li>
+                          <li class="list-group-item" id="hero__height"></li>
+                          <li class="list-group-item" id="hero__weight"></li>
+                          <li class="list-group-item" id="hero__eye-color"></li>
+                          <li class="list-group-item" id="hero__hair-color"></li>
+                      </ul></small></p>
+                      <p class="card-text" id="hero-work"><h5>Work</h5>
+                        <small><ul class="list-group list-group-flush">
+                          <li class="list-group-item" id="hero__occupation"></li>
+                          <li class="list-group-item" id="hero__base"></li>
+                      </ul></small></p>
+                      <p class="card-text" id="hero-connections"><h5>Connections</h5>
+                        <small><ul class="list-group list-group-flush">
+                          <li class="list-group-item" id="hero__group-affiliation"></li>
+                          <li class="list-group-item" id="hero__relatives"></li>
+                      </ul></small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="hero-stats" class="col-12 col-lg-6 pt-2 mb-3">
+            <div id="chartContainer"></div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="superheroapi.js"></script>
+</body>
+</html>

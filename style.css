@@ -1,0 +1,15 @@
+h1,h2,h3,h4,h5{
+    font-family: Impact, sans-serif;
+}
+#hero__info{
+    display: none;
+}
+#hero__stats{
+    height: 500px; 
+    border: 1px solid rgba(0,0,0,.125); 
+    border-radius: .25rem;
+}
+#chartContainer{
+    height: 490px; 
+    width: 100%;
+}
